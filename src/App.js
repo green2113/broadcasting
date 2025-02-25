@@ -25,7 +25,7 @@ function App() {
       <div className='flex flex-col min-h-screen'>
         <main className='flex-grow p-4'>
           <Routes>
-            <Route path="/form/1" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/form/adminpage" element={<AdminPage data={todos}/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
