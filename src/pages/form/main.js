@@ -44,7 +44,7 @@ function Main() {
           <div className="p-5">
             <h1 class="noto-sans-kr-900-normal text-3xl">방송부 신청</h1>
             <div>
-              <p class="noto-sans-kr-400-normal mt-1">방송부 신청을 위해 아래에 정보를 입력해주세요.<br/><a href='https://samgong-h.notion.site' className="underline" target='_blank' rel='noopener noreferrer'>여기</a>를 클릭해 학사일정에서 자세한 일정을 볼 수 있습니다.<br/><br/>양식은 제출 후 수정할 수 없습니다.</p>
+              <p class="noto-sans-kr-400-normal mt-1">방송부 신청을 위해 아래에 정보를 입력해주세요.<br/><a href='https://samgong-h.notion.site' className="underline" target='_blank' rel='noopener noreferrer'>여기</a>를 클릭해 학사일정에서 자세한 일정을 볼 수 있습니다.<br/><br/><span className='text-red-600 noto-sans-kr-600-normal'>양식은 제출 후 수정할 수 없습니다.</span></p>
             </div>
             <div className="mt-4">
               <div className="noto-sans-kr-400-normal bg-gray-100 max-w-max rounded-3xl" style={{padding: "8px 18px", fontSize: "14px"}}>
@@ -67,7 +67,7 @@ function Main() {
               <p>예) 1101 홍길동</p>
             </div>
             <div className="mt-4">
-              <textarea name="name" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg" value={formData.name} rows="1" placeholder='학번이름을 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={1000} onInput={(e) => {e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"}} onChange={handleChange} required></textarea>
+              <textarea name="name" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg" value={formData.name} rows="1" placeholder='학번이름을 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={100} onInput={(e) => {e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"}} onChange={handleChange} required></textarea>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ function Main() {
               <p>예) 010-1234-5678</p>
             </div>
             <div className="mt-4">
-              <textarea name="number" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg" value={formData.number} rows="1" placeholder='전화번호를 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={1000} onInput={(e) => {e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"}} onChange={handleChange} required></textarea>
+              <textarea name="number" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg" value={formData.number} rows="1" placeholder='전화번호를 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={15} onInput={(e) => {e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"}} onChange={handleChange} required></textarea>
             </div>
           </div>
         </div>
