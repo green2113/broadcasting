@@ -38,13 +38,13 @@ function Main() {
       <head>
         <title>방송부 신청</title>
       </head>
-      <form className="mt-14 max-w-2xl mx-auto flex flex-col" onSubmit={handleSubmit}>
+      <form className="mt-3 max-w-2xl mx-auto flex flex-col" onSubmit={handleSubmit}>
         <div className="rounded-lg form-box">
           <div className="bg-[#5865f2] bg-opacity-85 w-full h-36 rounded-tl-lg rounded-tr-lg"></div>
           <div className="p-5">
             <h1 class="noto-sans-kr-900-normal text-3xl">방송부 신청</h1>
             <div>
-              <p class="noto-sans-kr-400-normal mt-1">방송부 신청을 위해 아래에 정보를 입력해주세요.<br/><a href='https://samgong-h.notion.site' className="underline" target='_blank' rel='noopener noreferrer'>여기</a>를 클릭해 학사일정에서 자세한 일정을 볼 수 있습니다.</p>
+              <p class="noto-sans-kr-400-normal mt-1">방송부 신청을 위해 아래에 정보를 입력해주세요.<br/><a href='https://samgong-h.notion.site' className="underline" target='_blank' rel='noopener noreferrer'>여기</a>를 클릭해 학사일정에서 자세한 일정을 볼 수 있습니다.<br/><br/>양식은 제출 후 수정할 수 없습니다.</p>
             </div>
             <div className="mt-4">
               <div className="noto-sans-kr-400-normal bg-gray-100 max-w-max rounded-3xl" style={{padding: "8px 18px", fontSize: "14px"}}>

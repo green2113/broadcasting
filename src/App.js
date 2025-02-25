@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <div className='flex flex-col min-h-screen'>
-        <main className='flex-grow p-4'>
+        <main className='flex-grow' style={{padding: '10px 30px'}}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/form/adminpage" element={<AdminPage data={todos}/>} />
