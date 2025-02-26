@@ -58,3 +58,9 @@
   padding: 8px 13px;
   resize: none;
 }
+
+@media screen and (max-width: 768px) {
+  .color-box {
+      height: 90px;
+  }
+}
