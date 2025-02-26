@@ -99,7 +99,6 @@ function Main() {
           </div>
         </form>
       ) : (
-        // 제출 후 나타날 화면
         <div className="flex items-center h-screen justify-center flex-col">
           <div className="mb-4">
             <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
