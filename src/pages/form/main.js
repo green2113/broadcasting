@@ -8,7 +8,7 @@ function Main() {
     name: '',
     number: ''
   });
-  const [submitted, setSubmitted] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
