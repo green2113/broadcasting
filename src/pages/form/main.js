@@ -8,7 +8,7 @@ function Main() {
     name: '',
     number: ''
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
 
   const handleChange = (e) => {
     setFormData({
@@ -95,7 +95,7 @@ function Main() {
             </div>
           </div>
           <div className="p-4 mx-auto">
-            <button type="submit" className="bg-[#5865f2] text-white w-28 p-2 rounded-md noto-sans-kr-400-normal">제출</button>
+            <button type="submit" className="bg-[#414cca] text-white w-28 p-2 rounded-md noto-sans-kr-400-normal">제출</button>
           </div>
         </form>
       ) : (
@@ -109,9 +109,9 @@ function Main() {
           <div className="mb-4">
             <p className="text-lg noto-sans-kr-400-normal">답변이 제출되었습니다.</p>
           </div>
-          <button type='button' className='bg-[#50C878] bg-opacity-20 rounded-xl' style={{ padding: '10px 20px'}} onClick={handleReset}>
+          <button type='button' className='bg-[#5076c8] bg-opacity-20 rounded-xl' style={{ padding: '10px 20px'}} onClick={handleReset}>
             <div>
-              <p className='noto-sans-kr-600-normal text-emerald-500 text-sm'>추가 작성 하기</p>
+              <p className='noto-sans-kr-600-normal text-blue-700 text-sm'>추가 작성 하기</p>
             </div>
           </button>
         </div>
