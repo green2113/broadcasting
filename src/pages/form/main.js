@@ -11,7 +11,6 @@ function Main() {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    // 로컬 스토리지에서 제출 상태 확인
     const isSubmitted = localStorage.getItem('submitted');
     if (isSubmitted === 'true') {
       setSubmitted(true);
@@ -35,7 +34,7 @@ function Main() {
       console.log(error);
     } else {
       setSubmitted(true);
-      localStorage.setItem('submitted', 'true'); // 제출 상태 저장
+      localStorage.setItem('submitted', 'true');
       setFormData({
         name: '',
         number: ''
@@ -45,7 +44,7 @@ function Main() {
 
   const handleReset = () => {
     setSubmitted(false);
-    localStorage.removeItem('submitted'); // 제출 상태 삭제
+    localStorage.removeItem('submitted');
   };
 
   return (

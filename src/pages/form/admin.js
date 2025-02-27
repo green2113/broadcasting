@@ -26,7 +26,7 @@ function AdminPage() {
     fetchData();
   }, []);
 
-  if (pw !== '방송부') {
+  if (pw !== process.env.REACT_APP_ADMINPAGE_PASSWORD) {
     return <Error />;
   }
 
