@@ -59,8 +59,8 @@ function Main() {
             <div className="bg-[#5865f2] bg-opacity-85 w-full h-36 rounded-tl-lg rounded-tr-lg color-box"></div>
             <div className="p-5">
               <h1 className="noto-sans-kr-900-normal text-3xl">방송부 신청</h1>
-              <div>
-                <p className="noto-sans-kr-400-normal mt-1">
+              <div className='mt-1'>
+                <p className="noto-sans-kr-400-normal">
                   방송부 신청을 위해 아래에 정보를 입력해주세요.<br />
                   <a href='https://samgong-h.notion.site' className="underline" target='_blank' rel='noopener noreferrer'>여기</a>
                   를 클릭해 학사일정에서 자세한 일정을 볼 수 있습니다.<br /><br />
@@ -86,7 +86,7 @@ function Main() {
                 <p>예) 1101 홍길동</p>
               </div>
               <div className="mt-4">
-                <textarea name="name" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg" value={formData.name} rows="1"
+                <textarea name="name" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg resize-none req-content" value={formData.name} rows="1"
                   placeholder='학번이름을 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={100}
                   onInput={(e) => { e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"; }}
                   onChange={handleChange} required></textarea>
@@ -102,7 +102,7 @@ function Main() {
                 <p>예) 010-1234-5678</p>
               </div>
               <div className="mt-4">
-                <textarea name="number" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg" value={formData.number} rows="1"
+                <textarea name="number" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg req-content" value={formData.number} rows="1"
                   placeholder='전화번호를 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={15}
                   onInput={(e) => { e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"; }}
                   onChange={handleChange} required></textarea>

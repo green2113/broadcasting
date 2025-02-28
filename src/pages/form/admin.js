@@ -54,6 +54,7 @@ function AdminPage() {
           <>
             <div class='box p-4 rounded-lg mb-10'>
               <div className='text'>
+                <p className='noto-sans-kr-900-normal mb-2 text-[#5865f2]'>진행 중</p>
                 <h1 className='text-xl font-bold'>방송부 신청</h1>
                 <p className='text-base text-gray-600'>2025.03.04 ~ 2025.03.06 오후 8시</p>
               </div>

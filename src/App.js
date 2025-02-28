@@ -1,10 +1,12 @@
 import './css/admin.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { supabase } from './supabase';
+import { useEffect, useState } from 'react';
+
+import Make from './pages/form/make';
 import NotFound from './pages/error/404';
 import Home from './pages/form/main';
 import AdminPage from './pages/form/admin';
-import { supabase } from './supabase';
-import { useEffect, useState } from 'react';
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -28,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/form/adminpage" element={<AdminPage data={todos}/>} />
+            <Route path="/form/make" element={<Make />}></Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
