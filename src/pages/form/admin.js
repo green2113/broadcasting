@@ -59,11 +59,8 @@ function AdminPage() {
                 <p className='text-base text-gray-600'>2025.03.04 ~ 2025.03.06 오후 8시</p>
               </div>
             </div>
-            <div className='flex justify-between mt-4 mb-2'>
-              <div>
-                <p className='text-[#5865f2] se-nanum-square-900-normal'>{responses.length > 0 ? `${currentIndex + 1} / ${responses.length}` : '0 / 0'}</p>
-              </div>
-              <div className='flex space-x-6'>
+            <div className='flex justify-end'>
+              <div className='space-x-6'>
                 <button onClick={handlePrev} disabled={currentIndex === 0}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +93,14 @@ function AdminPage() {
                 </button>
               </div>
             </div>
+            <div className='flex justify-between mb-2'>
+              <div>
+                <p className='text-[#5865f2] se-nanum-square-900-normal'>{responses.length > 0 ? `${currentIndex + 1} / ${responses.length}` : '0 / 0'}</p>
+              </div>
+              <div>
+                <p className='noto-sans-kr-500-normal'>{new Date(currentData.created_at).toLocaleString()}</p>
+              </div>
+            </div>
 
             <div>
               <div className="rounded-lg form-box">
@@ -107,7 +112,7 @@ function AdminPage() {
                     <p>예) 1101 홍길동</p>
                   </div>
                   <div className="mt-4">
-                    <textarea className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg outline-none cursor-default" 
+                    <textarea className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg outline-none resize-none cursor-default" 
                       value={currentData.name} readOnly rows="1"></textarea>
                   </div>
                 </div>
@@ -122,7 +127,7 @@ function AdminPage() {
                     <p>예) 010-1234-5678</p>
                   </div>
                   <div className="mt-4">
-                    <textarea className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg outline-none cursor-default" 
+                    <textarea className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg outline-none resize-none cursor-default" 
                       value={currentData.number} readOnly rows="1"></textarea>
                   </div>
                 </div>

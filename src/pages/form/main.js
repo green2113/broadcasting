@@ -19,7 +19,7 @@ function Main() {
     }
 
     const now = new Date()
-    const startDate = new Date('2025-03-04T08:00:00')
+    const startDate = new Date('2025-03-03T00:00:00')
     const endDate = new Date('2025-03-06T20:00:00')
 
     if(now < startDate || now > endDate) {
@@ -137,7 +137,7 @@ function Main() {
                   <p>예) 010-1234-5678</p>
                 </div>
                 <div className="mt-4">
-                  <textarea name="number" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg req-content" value={formData.number} rows="1"
+                  <textarea name="number" className="noto-sans-kr-400-normal w-full textarea bg-[#f7f8fb] rounded-lg resize-none req-content" value={formData.number} rows="1"
                     placeholder='전화번호를 입력해주세요.' spellCheck="false" autoComplete='off' autoCorrect='off' autoCapitalize='off' maxLength={15}
                     onInput={(e) => { e.target.style.height = "auto"; e.target.style.height = e.target.scrollHeight + "px"; }}
                     onChange={handleChange} required></textarea>
