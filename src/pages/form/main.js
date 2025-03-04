@@ -20,7 +20,7 @@ function Main() {
 
     const now = new Date()
     const startDate = new Date('2025-03-05T00:00:00')
-    const endDate = new Date('2025-03-05T23:59:59')
+    const endDate = new Date('2025-03-06T13:30:00')
 
     if(now < startDate || now > endDate) {
       setIsClosed(true);
@@ -104,7 +104,7 @@ function Main() {
                 </div>
                 <div className="mt-4">
                   <div className="noto-sans-kr-400-normal bg-gray-100 max-w-max rounded-3xl" style={{ padding: "8px 18px", fontSize: "14px" }}>
-                    <p style={{ opacity: '.7' }}>2025.03.05. (수)</p>
+                    <p style={{ opacity: '.7' }}>2025.03.05. (수) ~ 2025.03.06. (목)</p>
                   </div>
                 </div>
               </div>
