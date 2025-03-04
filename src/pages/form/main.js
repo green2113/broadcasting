@@ -104,7 +104,7 @@ function Main() {
                 </div>
                 <div className="mt-4">
                   <div className="noto-sans-kr-400-normal bg-gray-100 max-w-max rounded-3xl" style={{ padding: "8px 18px", fontSize: "14px" }}>
-                    <p style={{ opacity: '.7' }}>2025.03.05. (수) ~ 2025.03.06. (목)</p>
+                    <p style={{ opacity: '.7' }}>2025.03.05. (수) ~ 2025.03.06. (목) 오후 1시 30분</p>
                   </div>
                 </div>
               </div>
