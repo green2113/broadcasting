@@ -144,7 +144,7 @@ function Main() {
                 </div>
               </div>
             </div>
-            <div className="p-4 mx-auto">
+            <div className="p-4 mt-4 mb-4 mx-auto">
               <button type="submit" className="bg-[#414cca] text-white w-28 p-2 rounded-md noto-sans-kr-400-normal">제출</button>
             </div>
           </form>
