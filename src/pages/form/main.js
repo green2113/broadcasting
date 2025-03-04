@@ -19,8 +19,8 @@ function Main() {
     }
 
     const now = new Date()
-    const startDate = new Date('2025-03-03T00:00:00')
-    const endDate = new Date('2025-03-06T20:00:00')
+    const startDate = new Date('2025-03-04T00:00:00')
+    const endDate = new Date('2025-03-11T23:59:59')
 
     if(now < startDate || now > endDate) {
       setIsClosed(true);
